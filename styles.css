@@ -1,7 +1,26 @@
-@media screen and (max-width: 865px) {
+@media screen and (max-width:865px) {
+
+  /*Modified by Oaker*/
+  .promoted-tweet{
+    display: none!important;
+  }
+  .SidebarCommonModules {
+    display: none !important;
+  }
+  .content-main AdaptiveSearchTimeline {
+    margin-left: -310px !important;
+  }
+  .AdaptiveSearchPage .AppContent-main {
+    min-width: 390px !important;
+  }
+  .AdaptiveSearchPage .AppContent {
+    min-width: 200px !important;
+  }
 
   /* less than 295px doesnt make much sense */
-  body, .global-nav .container { min-width: 295px !important; }
+  body, .global-nav .container {
+    min-width: 295px !important;
+  }
 
   /* remove margin between header and content */
   .module {
@@ -9,10 +28,15 @@
   }
 
   /* remove sidebar */
-  .dashboard { display: none !important; }
+  .dashboard {
+    display: none !important;
+  }
 
   /* make main twitter feed 100% width now that there's no sidebar */
-  .content-main { float: none !important; width: 100% !important; }
+  .content-main {
+    float: none !important;
+    width: 100% !important;
+  }
 
   /* fix padding for top of page (padding under topbar) */
   #page-container {
@@ -20,10 +44,14 @@
   }
 
   /* pad a little to help hide the text */
-  .topbar > .nav > li > a .new-wrapper { padding-right: 20px !important; }
+  .topbar > .nav > li > a .new-wrapper {
+    padding-right: 20px !important;
+  }
 
   /* fix alignment of new status indicator */
-  .global-nav .nav-new { left: 50% !important; }
+  .global-nav .nav-new {
+    left: 50% !important;
+  }
 
   /* fit the bird and loading indicator */
   .bird-topbar-etched, .pushstate-spinner {
@@ -44,12 +72,7 @@
 
   /* main components and overlays 100% width */
   .wrapper, .global-nav .container, .autocomplete-container, .header-module
-  .search-header, .tweet-row, div.tweet-media > *, .inline-media-image img,
-  .original-tweet div.tweet-media iframe, .twttr-goto-user-input,
-  .search-title, .search-assist-related-queries, .cards-base img,
-  .permalink-tweet div.tweet-media img, div.tweet-media .media img,
-  #tweet_dialog, .twttr-dialog-container, .profile-card.profile-header,
-  .profile-header-inner-overlay, .swift-media-gallery {
+  .search-header, .tweet-row, div.tweet-media > *, .inline-media-image img, .original-tweet div.tweet-media iframe, .twttr-goto-user-input, .search-title, .search-assist-related-queries, .cards-base img, .permalink-tweet div.tweet-media img, div.tweet-media .media img, #tweet_dialog, .twttr-dialog-container, .profile-card.profile-header, .profile-header-inner-overlay, .swift-media-gallery {
     width: 100% !important;
     height: auto !important;
     padding: 0 !important;
@@ -97,6 +120,7 @@
     background-size: cover;
     background-position: center;
   }
+
   /* fix header overlay */
   .profile-header-inner-overlay {
     bottom: 0 !important;
@@ -132,28 +156,20 @@
   .ProfileSidebar {
     margin: 0 !important;
   }
-
   .AppContainer .u-size1of4, .AppContainer .u-size2of8, .AppContainer
-  .u-size3of12, .AppContainer .u-size2of3, .AppContainer .u-size4of6,
-  .AppContainer .u-size8of12, .AppContainer .u-size3of4, .AppContainer
-  .u-size6of8, .AppContainer .u-size9of12, .AppContainer .u-size1of2,
-  .AppContainer .u-size2of4, .AppContainer .u-size3of6, .AppContainer
-  .u-size4of8, .AppContainer .u-size5of10, .AppContainer .u-size6of12,
-  .AppContainer .u-size1of3, .AppContainer .u-size2of6, .AppContainer
-  .u-size4of12
-  {
+  .u-size3of12, .AppContainer .u-size2of3, .AppContainer .u-size4of6, .AppContainer .u-size8of12, .AppContainer .u-size3of4, .AppContainer
+  .u-size6of8, .AppContainer .u-size9of12, .AppContainer .u-size1of2, .AppContainer .u-size2of4, .AppContainer .u-size3of6, .AppContainer
+  .u-size4of8, .AppContainer .u-size5of10, .AppContainer .u-size6of12, .AppContainer .u-size1of3, .AppContainer .u-size2of6, .AppContainer
+  .u-size4of12 {
     width: 100% !important;
     float: none !important;
   }
-
   .Grid--withGutter {
     margin: 0 !important;
   }
-
   .Grid--withGutter>.Grid-cell {
     padding: 0 !important;
   }
-
   .GridTimeline .u-mb10 {
     margin-bottom: 0 !important;
   }
@@ -172,7 +188,6 @@
   .ProfileCanopy-card {
     display: none;
   }
-
   .ProfileTweetbox .condensed .tweet-box {
     padding-right: 0 !important;
   }
@@ -197,15 +212,14 @@
   .ProfileNav-item--userActions .UserActions {
     text-align: right !important;
   }
+
   /* always display all nav items */
   .ProfileNav .is-hidden {
     display: inline-block !important;
   }
-
   .ProfileHeaderCard {
     margin-top: 75px !important;
   }
-
   .ProfileCard-bio {
     height: auto !important;
   }
@@ -221,19 +235,15 @@
   }
 
   /* rounded corners are so 90's */
-  .conent-main, .content-header .header-inner, .stream-items > *, .module,
-  .module .flex-module, .stream-end-inner, .stream-loading, .permalink-inner,
-  .modal-large .modal-content, .twttr-dialog-footer, #tweet_dialog,
-  .twttr-dialog-container, .modal-content, .permalink, .modal-header, .message,
-  .selected-stream-item, .with-media-forward .cards-base .media-forward,
-  .content-header, .content-no-header, .GalleryTweet, .Gallery-media,
-  .ProfileTweet, .ProfileTweetbox, .ProfileCard, .ProfileCard-bg {
+  .conent-main, .content-header .header-inner, .stream-items > *, .module, .module .flex-module, .stream-end-inner, .stream-loading, .permalink-inner, .modal-large .modal-content, .twttr-dialog-footer, #tweet_dialog, .twttr-dialog-container, .modal-content, .permalink, .modal-header, .message, .selected-stream-item, .with-media-forward .cards-base .media-forward, .content-header, .content-no-header, .GalleryTweet, .Gallery-media, .ProfileTweet, .ProfileTweetbox, .ProfileCard, .ProfileCard-bg {
     border-radius: 0 !important;
     -webkit-border-radius: 0 !important;
   }
 
   /* get rid of this button. just hit l instead */
-  .close-all-tweets { display: none !important; }
+  .close-all-tweets {
+    display: none !important;
+  }
 
   /* form that wraps search input needs default width */
   .global-nav .form-search {
@@ -242,15 +252,18 @@
 
   /* move the dropdown-menu under the search. */
   .form-search .dropdown-menu {
-    left: -215px !important;
+    left: -65px !important;
   }
+
   /* move the caret for the search dropdown to center it */
   .form-search .dropdown-caret {
     left: 135px !important;
   }
 
   /* profile actions don't fit, put 'em below the profile image */
-  .profile-card-actions { float: left !important; }
+  .profile-card-actions {
+    float: left !important;
+  }
 
   /* textareas all have fixed widths. let's "fix" that. */
   #tweet_dialog textarea, .twitter-anywhere-tweet-box-editor {
@@ -284,8 +297,7 @@
   }
 
   /* tame the inline tweetbox */
-  .inline-reply-tweetbox.swift .tweet-box,
-  .inline-reply-tweetbox .thumbnail-container {
+  .inline-reply-tweetbox.swift .tweet-box, .inline-reply-tweetbox .thumbnail-container {
     width: 100% !important;
     box-sizing: border-box !important;
     height: auto !important;
@@ -297,8 +309,29 @@
     box-sizing: border-box !important;
   }
 }
+@media screen and (max-width:575px) {
 
-@media screen and (max-width: 575px) {
+  /*  Modified by Oaker  */
+  .account, .tweet, .app {
+    padding: 9px 6px !important;
+  }
+  .stream-item-header .avatar, .permalink-header .avatar {
+    margin-left: -38px !important;
+  }
+  .stream-item .content, .permalink-tweet .content {
+    margin-left: 38px !important;
+  }
+  .avatar {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .AdaptiveSearchPage .AppContent-main {
+    margin-top: -15px !important;
+  }
+  .AdaptiveFiltersBar-nav {
+    text-align: left !important;
+  }
+
   /* shrink nav to 5 cells */
   .ProfileNav-item {
     width: 20% !important;
@@ -341,8 +374,8 @@
     padding-right: 1.5em !important;
   }
 }
+@media screen and (max-width:520px) {
 
-@media screen and (max-width: 520px) {
   /* shrink nav to 4 cells */
   .ProfileNav-item {
     width: 25% !important;
@@ -350,6 +383,7 @@
   .ProfileNav-item--userActions {
     width: 50% !important;
   }
+
   /* newer modal windows have width of 520px. */
   .modal {
     width: 100% !important;
@@ -359,16 +393,14 @@
     height: auto !important;
   }
 }
+@media screen and (max-width:560px) {
 
-@media screen and (max-width: 560px) {
   /* hide the bird */
   .bird-topbar-etched, .pushstate-spinner {
     display: none !important;
   }
 }
-
-
-@media screen and (max-width: 460px) {
+@media screen and (max-width:460px) {
   .topbar .nav > li > a {
     padding: 0 10px 0 4px;
   }
@@ -376,11 +408,12 @@
     margin: 11px 0 0 4px;
   }
 }
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width:450px) {
 
   /* avatar row doesn't wrap nicely, so just hide it */
-  .avatar-row { display: none !important; }
+  .avatar-row {
+    display: none !important;
+  }
 
   /* actions (when wrapped) have a gray artifact bc of background. hide it. */
   .tweet .actions {
@@ -391,6 +424,7 @@
   .tweet .actions li a {
     white-space: nowrap;
   }
+
   /* hide tweet action text - use icons */
   .tweet-actions a b {
     display: none !important;
@@ -398,14 +432,13 @@
   .tweet-actions {
     float: right !important;
   }
+
   /* if there's expanded content clear floated tweet actions */
   .expanded-content {
     clear: right;
   }
-
 }
-
-@media screen and (max-width: 440px) {
+@media screen and (max-width:440px) {
 
   /* help make profile content fit */
   .profile-card.profile-header .profile-picture {
@@ -430,35 +463,33 @@
 
   /* move search dropdown back to the right and center */
   .form-search .dropdown-menu {
-    left: -245px !important;
+    left: -85px !important;
     width: 285px !important;
   }
 
   /* enlarge search */
   .global-nav .search-input, .global-nav .search-input:focus, .global-nav
-  .search-input.focus, .global-nav .highlight .search-input,
-  .global-nav .dwrli .search-input {
+  .search-input.focus, .global-nav .highlight .search-input, .global-nav .dwrli .search-input {
     width: 150px !important;
   }
 }
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width:420px) {
   .topbar .nav > li > a {
     padding: 0 6px 0 4px;
   }
   .topbar .nav > li .Icon {
     margin: 11px 0 0 2px;
   }
-
   .global-nav .people.notifications .count {
     left: 13px !important;
   }
 }
-
-@media screen and (max-width: 408px) {
+@media screen and (max-width:408px) {
 
   /* reduce the font size for this really narrow width */
-  body { font-size: 0.8em !important; }
+  body {
+    font-size: 0.8em !important;
+  }
 
   /* shrink nav to 3 cells */
   .ProfileNav-item {
@@ -467,10 +498,8 @@
   .ProfileNav-item--userActions {
     width: 100% !important;
   }
-
   .global-nav .search-input, .global-nav .search-input:focus, .global-nav
-  .search-input.focus, .global-nav .highlight .search-input,
-  .global-nav .dwrli .search-input {
+  .search-input.focus, .global-nav .highlight .search-input, .global-nav .dwrli .search-input {
     width: 110px !important;
   }
 
@@ -497,8 +526,7 @@
   }
 
   /* make dialog/modals fit */
-  .twttr-dialog-container, #retweet-dialog, #tweet_dialog,
-  #profile_popup .modal {
+  .twttr-dialog-container, #retweet-dialog, #tweet_dialog, #profile_popup .modal {
     width: 100% !important;
   }
 
@@ -518,7 +546,9 @@
   }
 
   /* profile actions don't fit, put 'em below the profile image */
-  .profile-card-actions { float: left !important; }
+  .profile-card-actions {
+    float: left !important;
+  }
 
   /* textareas all have fixed widths. let's "fix" that. */
   #tweet_dialog textarea, .twitter-anywhere-tweet-box-editor {
@@ -530,8 +560,8 @@
     width: 85% !important;
   }
 }
+@media screen and (max-width:370px) {
 
-@media screen and (max-width: 370px) {
   /* shrink search */
   .global-nav .search-input, .global-nav .search-input:focus, .global-nav
   .search-input.focus, .global-nav .highlight .search-input, .global-nav .dwrli
@@ -539,9 +569,7 @@
     width: 74px !important;
   }
 }
-
-@media screen and (max-width: 335px) {
-
+@media screen and (max-width:335px) {
   .topbar .nav > li > a {
     padding: 0 7px 0 4px;
   }
@@ -555,20 +583,22 @@
   .search-input {
     width: 44px !important;
   }
-
   .form-search .dropdown-menu {
     left: -190px !important;
     width: 245px !important;
   }
 }
-
-@media screen and (max-width: 308px) {
+@media screen and (max-width:308px) {
 
   /* reduce the font size for this really narrow width */
-  body { font-size: 0.75em !important; }
+  body {
+    font-size: 0.75em !important;
+  }
 
   /* hide actions in tweet footer ... */
-  .tweet .stream-item-footer { display: none; }
+  .tweet .stream-item-footer {
+    display: none;
+  }
 
   /* hide dialog close button. use <esc> instead */
   .twttr-dialog .twttr-dialog-close {
@@ -576,7 +606,9 @@
   }
 
   /* ... but show them when expanded */
-  .opened-tweet .stream-item-footer { display: block; }
+  .opened-tweet .stream-item-footer {
+    display: block;
+  }
 
   /* don't show avatar in stream (but show it on profiles) */
   .stream .avatar, .tweet .avatar, .dropdown-menu .avatar {
@@ -584,7 +616,9 @@
   }
 
   /* remove margin since we don't show avatars */
-  .content { margin-left: 0 !important; }
+  .content {
+    margin-left: 0 !important;
+  }
 
   /* shrink margin on replies too, because avatars are removed there too */
   .inline-reply-tweetbox, .replies .tweet, .permalink-replies .tweet {
